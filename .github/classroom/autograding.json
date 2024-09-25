@@ -1,0 +1,205 @@
+{
+  "tests": [
+    {
+      "name": "Test 1",
+      "setup": "",
+      "run": "timeout 1 ./converter",
+      "input": "123 10 16",
+      "output": "7B",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 2",
+      "setup": "",
+      "run": "timeout 1 ./converter",
+      "input": "123 10 2",
+      "output": "1111011",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 3",
+      "setup": "",
+      "run": "timeout 1 ./converter",
+      "input": "ABBA 16 10",
+      "output": "43962",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 4",
+      "setup": "",
+      "run": "timeout 1 ./converter",
+      "input": "ABBA 16 8",
+      "output": "125672",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 5",
+      "setup": "",
+      "run": "timeout 1 ./converter",
+      "input": "100010100111110101 2 20",
+      "output": "HEAD",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 6",
+      "setup": "",
+      "run": "timeout 1 ./converter",
+      "input": "ABBA 10 16",
+      "output": "wrong integer",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 7",
+      "setup": "",
+      "run": "timeout 1 ./converter",
+      "input": "FFFFFFFF 16 10",
+      "output": "4294967295",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 8",
+      "setup": "",
+      "run": "timeout 1 ./converter",
+      "input": "4294967296 10 16",
+      "output": "100000000",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Tets 9",
+      "setup": "",
+      "run": "timeout 1 ./converter",
+      "input": "FFFFFFFFFFFFFFFF 16 8",
+      "output": "1777777777777777777777",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 10",
+      "setup": "",
+      "run": "timeout 1 ./converter",
+      "input": "FFFFFFFFFFFFFFFF 16 2",
+      "output": "1111111111111111111111111111111111111111111111111111111111111111",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 11",
+      "setup": "",
+      "run": "timeout 1 ./converter",
+      "input": "DEDA 15 12",
+      "output": "233BA",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 12",
+      "setup": "",
+      "run": "timeout 1 ./converter",
+      "input": "JIHGFEDCBA9876 20 3",
+      "output": "101212220120010110120020002110122211012",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 13",
+      "setup": "",
+      "run": "timeout 1 ./converter",
+      "input": "BADGAY 20 19",
+      "output": "wrong integer",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 14",
+      "setup": "",
+      "run": "timeout 1 ./converter",
+      "input": "131243025252 7 16",
+      "output": "ABADBABE",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 15",
+      "setup": "",
+      "run": "timeout 1 ./converter",
+      "input": "437F27AH 19 16",
+      "output": "DEADBEEF",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 16",
+      "setup": "",
+      "run": "timeout 1 ./converter",
+      "input": "27003426305 9 18",
+      "output": "FEEDC0DE",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 17",
+      "setup": "",
+      "run": "timeout 1 ./converter",
+      "input": "101010011001010101100010101100010 2 17",
+      "output": "DECAFBAD",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 18",
+      "setup": "",
+      "run": "timeout 1 ./converter",
+      "input": "1H8B 19 14",
+      "output": "4B1D",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 19",
+      "setup": "",
+      "run": "timeout 1 ./converter",
+      "input": "18446744073709551615 10 10",
+      "output": "18446744073709551615",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 20",
+      "setup": "",
+      "run": "timeout 1 ./converter",
+      "input": "B44F7CFA61HCC27 20 16",
+      "output": "FEEDFACECAFEBEEF",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 1
+    }
+
+  ]
+}
